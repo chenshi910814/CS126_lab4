@@ -1,4 +1,22 @@
-#lights out
+#define a square
+def square():
+    board = []
+    square = ['empty square','full square']
+square=[
+[1,2,3],
+[3,4,5],
+[6,8,9],
+]
+
+for _ in square: 
+    print(_)
+
+#input function
+please chose a row number(0-4)
+please choose a column number (0-4)
+You won with ... moves!
+
+#define the main function 
 def main():
     board = [...]
 
