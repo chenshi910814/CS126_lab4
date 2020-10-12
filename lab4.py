@@ -1,3 +1,7 @@
+#lab 4
+#Ammon Plerson
+#Shi Chen, sc2592@nau.edu
+
 #define a square
 def square():
     board = []
