@@ -2,15 +2,18 @@
 #Ammon Plerson
 #Shi Chen, sc2592@nau.edu
 
-#define a square
+#create a 5*5 board
 def square():
     board = []
-    square = ['empty square','full square']
+    square = ['white square','black square']
 square=[
 [1,2,3],
 [3,4,5],
 [6,8,9],
-]
+import random 
+
+#escape code
+print("\N{white square}")
 
 for _ in square: 
     print(_)
