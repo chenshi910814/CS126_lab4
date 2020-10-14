@@ -6,11 +6,11 @@ import random
 WHITE_SQUARE = "\N{WHITE SQUARE}"
 BLACK_SQUARE = "\N{BLACK SQUARE}"
 
-
+#i is the list; j is the element in the list
 def randomize(board):
     for i in range(5):
         for j in range(5):
-            board[i][j] = random.choice([True, False])
+            board[i][j] = random.choice([True, False]) #random choice between True and false
 
 
 def is_solved(board):
