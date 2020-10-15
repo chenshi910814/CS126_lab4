@@ -2,18 +2,20 @@
 # Ammon Plerson
 # Shi Chen, sc2592@nau.edu
 import random
-#the squares used to represent lights
+# the squares used to represent lights
 WHITE_SQUARE = "\N{WHITE SQUARE}"
 BLACK_SQUARE = "\N{BLACK SQUARE}"
 
-#i is the list; j is the element in the list
-#set board to lights out and then press 10 random squares to make it solvable 
+# i is the list; j is the element in the list
+# set board to lights out and then press 10 random squares to make it solvable
+
+
 def randomize(board):
     for i in range(5):
         for j in range(5):
-            board[i][j]=True
-        for i in range(10): 
-            touch(board,random.randrange(0,5),random.randrange(0,5)) 
+            board[i][j] = True
+        for i in range(10):
+            touch(board, random.randrange(0, 5), random.randrange(0, 5))
 
 
 def is_solved(board):
@@ -23,7 +25,9 @@ def is_solved(board):
                 return False
     return True
 
-#user chooses row and column for game 
+# user chooses row and column for game
+
+
 def solicit_row_and_col():
     row = int(input("Please choose a row number (0-4): "))
     column = int(input("Please choose a column number (0-4):"))
@@ -37,7 +41,9 @@ def show(board):
         )
         print(row_string)
 
-#peramiters
+# peramiters
+
+
 def touch(board, row, col):
     board[row][col] = not board[row][col]
     if row > 0:
@@ -66,6 +72,7 @@ def main():
         moves += 1
     show(board)
     print(f"You won with {moves} moves!")
+
 
 if __name__ == "__main__":
     main()
